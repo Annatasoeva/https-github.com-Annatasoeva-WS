@@ -12,10 +12,11 @@ namespace MainScreen
 {
     public partial class FormMainScreen : Form
     {
+        Slider s1;
         public FormMainScreen()
         {
             InitializeComponent();
-            showPicture();
+            s1 = new Slider("images", new List<PictureBox> { pictureBox1, pictureBox2, pictureBox3 });
         }
         void showPicture()
         {
