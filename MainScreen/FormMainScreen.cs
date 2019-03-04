@@ -17,10 +17,10 @@ namespace MainScreen
             InitializeComponent();
             showPicture();
         }
-        int numberCurrentPicture = 1;
+        int numberCurrentPicture = 0;
         void showPicture()
         {
-            pictureBox1.Image = Image.FromFile("images/"+((numberCurrentPicture)%18+1)+".jpg");
+            pictureBox1.Image = Image.FromFile("images/"+ ((numberCurrentPicture) %18 + 1) +".jpg");
             pictureBox2.Image = Image.FromFile("images/"+ ((numberCurrentPicture+1) % 18 + 1) +".jpg");
             pictureBox3.Image = Image.FromFile("images/"+ ((numberCurrentPicture+2) % 18 + 1) +".jpg");
         }
