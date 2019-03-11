@@ -22,6 +22,7 @@ namespace MainScreen
             DirectoryInfo dir = new DirectoryInfo(nameFolder);
             foreach (var file in dir.GetFiles())
                 nameImages.Add(file.FullName);
+            showPicture();
         }
         void showPicture()
         {
@@ -29,6 +30,16 @@ namespace MainScreen
             {
                 pictures[i].Image = Image.FromFile(nameImages[(numberCurrentPicture + i) % nameImages.Count]);
             }
+        }
+        public void sliderRight()
+        {
+            numberCurrentPicture = (numberCurrentPicture + pictures.Count) % nameImages.Count;
+            showPicture();
+        }
+        public void sliderLeft()
+        {
+            numberCurrentPicture = (numberCurrentPicture - pictures.Count + nameImages.Count) % nameImages.Count;
+            showPicture();
         }
     }
 }
