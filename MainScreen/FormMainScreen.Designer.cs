@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMainScreen));
             this.panelInfo = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelInfo = new System.Windows.Forms.Label();
             this.panelButton = new System.Windows.Forms.Panel();
             this.labelWelcom = new System.Windows.Forms.Label();
             this.labelManagement = new System.Windows.Forms.Label();
@@ -43,20 +43,25 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.buttonRight = new System.Windows.Forms.Button();
             this.buttonLeft = new System.Windows.Forms.Button();
+            this.paneltobutton = new System.Windows.Forms.Panel();
+            this.buttonvisitor = new System.Windows.Forms.Button();
+            this.buttonadmin = new System.Windows.Forms.Button();
             this.panelInfo.SuspendLayout();
             this.panelButton.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
+            this.panelTitle.SuspendLayout();
             this.panelFoto.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.paneltobutton.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelInfo
             // 
             this.panelInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(149)))), ((int)(((byte)(194)))));
-            this.panelInfo.Controls.Add(this.label1);
+            this.panelInfo.Controls.Add(this.labelInfo);
             this.panelInfo.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelInfo.ForeColor = System.Drawing.SystemColors.ControlText;
             this.panelInfo.Location = new System.Drawing.Point(0, 403);
@@ -64,18 +69,18 @@
             this.panelInfo.Size = new System.Drawing.Size(828, 51);
             this.panelInfo.TabIndex = 0;
             // 
-            // label1
+            // labelInfo
             // 
-            this.label1.AutoSize = true;
-            this.label1.CausesValidation = false;
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(207, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(401, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "«The current season is 2016–2017, and the NBA already has a history of 71 years»." +
+            this.labelInfo.AutoSize = true;
+            this.labelInfo.CausesValidation = false;
+            this.labelInfo.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.labelInfo.Location = new System.Drawing.Point(207, 19);
+            this.labelInfo.Name = "labelInfo";
+            this.labelInfo.Size = new System.Drawing.Size(401, 13);
+            this.labelInfo.TabIndex = 0;
+            this.labelInfo.Text = "«The current season is 2016–2017, and the NBA already has a history of 71 years»." +
     "";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.labelInfo.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // panelButton
             // 
@@ -125,11 +130,12 @@
             // 
             // panelTitle
             // 
-            this.panelTitle.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.panelTitle.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.panelTitle.Controls.Add(this.paneltobutton);
             this.panelTitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitle.Location = new System.Drawing.Point(0, 130);
             this.panelTitle.Name = "panelTitle";
-            this.panelTitle.Size = new System.Drawing.Size(828, 86);
+            this.panelTitle.Size = new System.Drawing.Size(828, 166);
             this.panelTitle.TabIndex = 3;
             // 
             // panelFoto
@@ -138,9 +144,9 @@
             this.panelFoto.Controls.Add(this.buttonRight);
             this.panelFoto.Controls.Add(this.buttonLeft);
             this.panelFoto.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelFoto.Location = new System.Drawing.Point(0, 216);
+            this.panelFoto.Location = new System.Drawing.Point(0, 296);
             this.panelFoto.Name = "panelFoto";
-            this.panelFoto.Size = new System.Drawing.Size(828, 187);
+            this.panelFoto.Size = new System.Drawing.Size(828, 107);
             this.panelFoto.TabIndex = 4;
             // 
             // tableLayoutPanel1
@@ -159,7 +165,7 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(678, 187);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(678, 107);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
             // pictureBox1
@@ -168,7 +174,7 @@
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Location = new System.Drawing.Point(3, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(220, 181);
+            this.pictureBox1.Size = new System.Drawing.Size(220, 101);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -179,7 +185,7 @@
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox2.Location = new System.Drawing.Point(229, 3);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(220, 181);
+            this.pictureBox2.Size = new System.Drawing.Size(220, 101);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
@@ -190,7 +196,7 @@
             this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox3.Location = new System.Drawing.Point(455, 3);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(220, 181);
+            this.pictureBox3.Size = new System.Drawing.Size(220, 101);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
@@ -201,7 +207,7 @@
             this.buttonRight.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonRight.Location = new System.Drawing.Point(753, 0);
             this.buttonRight.Name = "buttonRight";
-            this.buttonRight.Size = new System.Drawing.Size(75, 187);
+            this.buttonRight.Size = new System.Drawing.Size(75, 107);
             this.buttonRight.TabIndex = 1;
             this.buttonRight.Text = ">";
             this.buttonRight.UseVisualStyleBackColor = true;
@@ -213,11 +219,49 @@
             this.buttonLeft.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonLeft.Location = new System.Drawing.Point(0, 0);
             this.buttonLeft.Name = "buttonLeft";
-            this.buttonLeft.Size = new System.Drawing.Size(75, 187);
+            this.buttonLeft.Size = new System.Drawing.Size(75, 107);
             this.buttonLeft.TabIndex = 0;
             this.buttonLeft.Text = "<";
             this.buttonLeft.UseVisualStyleBackColor = true;
             this.buttonLeft.Click += new System.EventHandler(this.buttonLeft_Click);
+            // 
+            // paneltobutton
+            // 
+            this.paneltobutton.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.paneltobutton.Controls.Add(this.buttonadmin);
+            this.paneltobutton.Controls.Add(this.buttonvisitor);
+            this.paneltobutton.Location = new System.Drawing.Point(210, 26);
+            this.paneltobutton.Name = "paneltobutton";
+            this.paneltobutton.Size = new System.Drawing.Size(416, 126);
+            this.paneltobutton.TabIndex = 0;
+            // 
+            // buttonvisitor
+            // 
+            this.buttonvisitor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.buttonvisitor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(149)))), ((int)(((byte)(194)))));
+            this.buttonvisitor.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.buttonvisitor.Location = new System.Drawing.Point(23, 34);
+            this.buttonvisitor.Name = "buttonvisitor";
+            this.buttonvisitor.Size = new System.Drawing.Size(99, 64);
+            this.buttonvisitor.TabIndex = 0;
+            this.buttonvisitor.Text = "Visitor";
+            this.buttonvisitor.UseVisualStyleBackColor = false;
+            // 
+            // buttonadmin
+            // 
+            this.buttonadmin.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonadmin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(149)))), ((int)(((byte)(194)))));
+            this.buttonadmin.ForeColor = System.Drawing.SystemColors.Control;
+            this.buttonadmin.Location = new System.Drawing.Point(287, 34);
+            this.buttonadmin.Name = "buttonadmin";
+            this.buttonadmin.Size = new System.Drawing.Size(111, 64);
+            this.buttonadmin.TabIndex = 1;
+            this.buttonadmin.Text = "Admin";
+            this.buttonadmin.UseVisualStyleBackColor = false;
             // 
             // FormMainScreen
             // 
@@ -234,11 +278,13 @@
             this.panelInfo.PerformLayout();
             this.panelButton.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
+            this.panelTitle.ResumeLayout(false);
             this.panelFoto.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.paneltobutton.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -246,7 +292,7 @@
         #endregion
 
         private System.Windows.Forms.Panel panelInfo;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelInfo;
         private System.Windows.Forms.Panel panelButton;
         private System.Windows.Forms.Panel panelTitle;
         private System.Windows.Forms.Label labelWelcom;
@@ -259,6 +305,9 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Panel paneltobutton;
+        private System.Windows.Forms.Button buttonadmin;
+        private System.Windows.Forms.Button buttonvisitor;
     }
 }
 
