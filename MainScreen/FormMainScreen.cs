@@ -30,5 +30,16 @@ namespace MainScreen
         {
             sl.sliderLeft();
         }
+
+        private void buttonadmin_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonvisitor_Click(object sender, EventArgs e)
+        {
+            VisitorMenu formVisitor = new VisitorMenu();
+            formVisitor.ShowDialog();
+        }
     }
 }

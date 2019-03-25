@@ -36,6 +36,9 @@
             this.labelManagement = new System.Windows.Forms.Label();
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.panelTitle = new System.Windows.Forms.Panel();
+            this.paneltobutton = new System.Windows.Forms.Panel();
+            this.buttonadmin = new System.Windows.Forms.Button();
+            this.buttonvisitor = new System.Windows.Forms.Button();
             this.panelFoto = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -43,19 +46,16 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.buttonRight = new System.Windows.Forms.Button();
             this.buttonLeft = new System.Windows.Forms.Button();
-            this.paneltobutton = new System.Windows.Forms.Panel();
-            this.buttonvisitor = new System.Windows.Forms.Button();
-            this.buttonadmin = new System.Windows.Forms.Button();
             this.panelInfo.SuspendLayout();
             this.panelButton.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.panelTitle.SuspendLayout();
+            this.paneltobutton.SuspendLayout();
             this.panelFoto.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.paneltobutton.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelInfo
@@ -137,6 +137,46 @@
             this.panelTitle.Name = "panelTitle";
             this.panelTitle.Size = new System.Drawing.Size(828, 166);
             this.panelTitle.TabIndex = 3;
+            // 
+            // paneltobutton
+            // 
+            this.paneltobutton.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.paneltobutton.Controls.Add(this.buttonadmin);
+            this.paneltobutton.Controls.Add(this.buttonvisitor);
+            this.paneltobutton.Location = new System.Drawing.Point(210, 26);
+            this.paneltobutton.Name = "paneltobutton";
+            this.paneltobutton.Size = new System.Drawing.Size(416, 126);
+            this.paneltobutton.TabIndex = 0;
+            // 
+            // buttonadmin
+            // 
+            this.buttonadmin.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonadmin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(149)))), ((int)(((byte)(194)))));
+            this.buttonadmin.ForeColor = System.Drawing.SystemColors.Control;
+            this.buttonadmin.Location = new System.Drawing.Point(287, 34);
+            this.buttonadmin.Name = "buttonadmin";
+            this.buttonadmin.Size = new System.Drawing.Size(111, 64);
+            this.buttonadmin.TabIndex = 1;
+            this.buttonadmin.Text = "Admin";
+            this.buttonadmin.UseVisualStyleBackColor = false;
+            this.buttonadmin.Click += new System.EventHandler(this.buttonadmin_Click);
+            // 
+            // buttonvisitor
+            // 
+            this.buttonvisitor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.buttonvisitor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(149)))), ((int)(((byte)(194)))));
+            this.buttonvisitor.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.buttonvisitor.Location = new System.Drawing.Point(23, 34);
+            this.buttonvisitor.Name = "buttonvisitor";
+            this.buttonvisitor.Size = new System.Drawing.Size(99, 64);
+            this.buttonvisitor.TabIndex = 0;
+            this.buttonvisitor.Text = "Visitor";
+            this.buttonvisitor.UseVisualStyleBackColor = false;
+            this.buttonvisitor.Click += new System.EventHandler(this.buttonvisitor_Click);
             // 
             // panelFoto
             // 
@@ -225,44 +265,6 @@
             this.buttonLeft.UseVisualStyleBackColor = true;
             this.buttonLeft.Click += new System.EventHandler(this.buttonLeft_Click);
             // 
-            // paneltobutton
-            // 
-            this.paneltobutton.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.paneltobutton.Controls.Add(this.buttonadmin);
-            this.paneltobutton.Controls.Add(this.buttonvisitor);
-            this.paneltobutton.Location = new System.Drawing.Point(210, 26);
-            this.paneltobutton.Name = "paneltobutton";
-            this.paneltobutton.Size = new System.Drawing.Size(416, 126);
-            this.paneltobutton.TabIndex = 0;
-            // 
-            // buttonvisitor
-            // 
-            this.buttonvisitor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.buttonvisitor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(149)))), ((int)(((byte)(194)))));
-            this.buttonvisitor.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.buttonvisitor.Location = new System.Drawing.Point(23, 34);
-            this.buttonvisitor.Name = "buttonvisitor";
-            this.buttonvisitor.Size = new System.Drawing.Size(99, 64);
-            this.buttonvisitor.TabIndex = 0;
-            this.buttonvisitor.Text = "Visitor";
-            this.buttonvisitor.UseVisualStyleBackColor = false;
-            // 
-            // buttonadmin
-            // 
-            this.buttonadmin.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonadmin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(149)))), ((int)(((byte)(194)))));
-            this.buttonadmin.ForeColor = System.Drawing.SystemColors.Control;
-            this.buttonadmin.Location = new System.Drawing.Point(287, 34);
-            this.buttonadmin.Name = "buttonadmin";
-            this.buttonadmin.Size = new System.Drawing.Size(111, 64);
-            this.buttonadmin.TabIndex = 1;
-            this.buttonadmin.Text = "Admin";
-            this.buttonadmin.UseVisualStyleBackColor = false;
-            // 
             // FormMainScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -279,12 +281,12 @@
             this.panelButton.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.panelTitle.ResumeLayout(false);
+            this.paneltobutton.ResumeLayout(false);
             this.panelFoto.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.paneltobutton.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
